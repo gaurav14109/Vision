@@ -3,7 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package views;
+package views.Examination;
+
+import views.Examination.PatientSymptoms;
 
 /**
  *
@@ -34,7 +36,7 @@ public class addExamination extends javax.swing.JFrame {
         label1 = new java.awt.Label();
         OK = new javax.swing.JButton();
 
-        dispose();
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         label1.setText("Examination Name");
 

@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package com.mycompany.vision;
-import views.PatientExamination;
+import views.Examination.PatientExamination;
 /**
  *
  * @author aurav

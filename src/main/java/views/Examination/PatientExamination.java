@@ -1,4 +1,4 @@
-package views;
+package views.Examination;
 
 /*
  * To change this license header, choose License Headers in Project Properties.

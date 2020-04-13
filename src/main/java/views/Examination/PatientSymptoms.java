@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package views;
+package views.Examination;
 
 import javax.swing.DefaultListModel;
 
@@ -43,7 +43,6 @@ public class PatientSymptoms extends javax.swing.JFrame {
         addNewExamination = new java.awt.Button();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(600, 500));
 
         complaintSearch.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -123,8 +122,6 @@ public class PatientSymptoms extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        addNewExamination.getAccessibleContext().setAccessibleName("Add New");
-
         pack();
     }// </editor-fold>//GEN-END:initComponents
     //Create By Urself.
@@ -170,7 +167,7 @@ public class PatientSymptoms extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private static javax.swing.JList<String> jList2;
+    private javax.swing.JList<String> jList2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTextField symptomSearch;
