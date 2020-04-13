@@ -6,6 +6,7 @@
 package views.Examination;
 
 import views.Examination.PatientSymptoms;
+import views.Examination.PatientSymptoms;
 
 /**
  *

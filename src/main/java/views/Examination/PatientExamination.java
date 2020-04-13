@@ -1,5 +1,8 @@
 package views.Examination;
 
+import java.util.Calendar;
+import javax.swing.JTextField;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -17,6 +20,7 @@ public class PatientExamination extends javax.swing.JFrame {
      */
     public PatientExamination() {
         initComponents();
+       
     }
 
     /**
@@ -30,6 +34,7 @@ public class PatientExamination extends javax.swing.JFrame {
 
         addExamination = new java.awt.Button();
         Examination = new java.awt.Label();
+        dateTimePicker1 = new com.github.lgooddatepicker.components.DateTimePicker();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -51,12 +56,18 @@ public class PatientExamination extends javax.swing.JFrame {
                 .addComponent(addExamination, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(2, 2, 2)
                 .addComponent(Examination, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(146, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(99, Short.MAX_VALUE)
+                .addComponent(dateTimePicker1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(80, 80, 80))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(147, Short.MAX_VALUE)
+                .addContainerGap(152, Short.MAX_VALUE)
+                .addComponent(dateTimePicker1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(26, 26, 26)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(Examination, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(addExamination, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -71,11 +82,20 @@ public class PatientExamination extends javax.swing.JFrame {
           java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new PatientSymptoms().setVisible(true);
+                String OriginalDate  = jDateChooser1.getDate().toString();
+                System.out.println(OriginalDate);
+                
+                
                 
             }
         });
     }//GEN-LAST:event_addExaminationActionPerformed
 
+ 
+
+        
+        
+ 
     /**
      * @param args the command line arguments
      */
@@ -83,5 +103,6 @@ public class PatientExamination extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private java.awt.Label Examination;
     private java.awt.Button addExamination;
+    private com.github.lgooddatepicker.components.DateTimePicker dateTimePicker1;
     // End of variables declaration//GEN-END:variables
 }
